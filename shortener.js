@@ -1,8 +1,3 @@
-// style
-document.body.style.background = "#4e54c8";
-
-//
-
 function elementSelector(selector) {
   const element = document.getElementById(selector);
   if (element) return element;
@@ -11,7 +6,6 @@ function elementSelector(selector) {
 
 // select btn
 const copyShortensBtn = elementSelector("button_shortens_Copy");
-const background = elementSelector("background");
 // clicked btn
 copyShortensBtn.onclick = function () {
   const inpText = elementSelector("inputText");
@@ -43,14 +37,13 @@ function displayUiSorter(data) {
     alert("found Not Valid url ");
     return;
   }
-  //   console.log("data", data);
   const displaySortedDiv = elementSelector("display_Shortener_container");
 
   const div = document.createElement("div");
   div.classList.add("d-flex", "gap-4");
   //   code;
   //   full_share_link;
-  //   full_short_link; !Normal Good 
+  //   full_short_link; !Normal Good
   //   full_short_link2;
   //   full_short_link3;
   //   original_link;
